@@ -47,7 +47,9 @@ Ahora, nosotros no podemos ver un archivo qza (hay maneras pero no es tan sencil
 
 Esto nos generara un archov el cual podemos descargar y ver utilizando la página [Qiime2-View](https://view.qiime2.org/). En esta nada más es necesario arrastrar el archivo descargado a la casilla para ver nuestros resultados. 
 
-![Quality visualization of demux.qzv - Note that the quality is low at the start and the finish. This is common in illumina sequences. The dip at the start suggest presence of primers or indexes in most samples. We will trim a little from the start and make a cutoff to keep the quality before it drops at the end](./images/Demuxv.png){width=50%}
+![Quality visualization of demux.qzv](./images/Demuxv.png)
+
+Note that the quality is low at the start and the finish. This is common in illumina sequences. The dip at the start suggest presence of primers or indexes in most samples. We will trim a little from the start and make a cutoff to keep the quality before it drops at the end]
 
 ## DADA2 - denoising 
 
@@ -124,14 +126,14 @@ En esta tabla veremos la cantidad de secuencias o ASVs que sobrevivieron el filt
 
 Vamos a ver estadísticas del proceso de denoising más a detalle. Como lo explicado anteriormente, vamos a ver los distintos pasos de filtrado, el input, lo filtrado (basandose en cortes que le establecimos y una calidad mínima promedio), denoising (aprendido de nuestras muestras), non chimeric y las que pasaron todos los filtros. Idealmente que pasen entre un 70%-80% de los reads es lo mejor. Igualmente van a haber unas que pasen con menos pero que igual me van a generar una buena cantidad de reads por ciertos factores en la secuenciación. 
 
-![denoising stats ](./images/denoising-stats.png){width=50%}
+![denoising stats ](./images/denoising-stats.png)
 
 ### Representative Sequences
 
 Las representative sequences de nuestro output son básicamente todas aquellas secuencias que pasaron por el filtro de DADA2 y que asoció a algún ASV. Tener en cuenta que aún no hemos asignado nuestra taxonomía, pero estas son importantes para hacerlo. 
 
 ![representative sequences](./images/Rep-seqs-qzv.png
-){width=50%}
+)
 
 ## Greengenes2 - Non-v4-16s Data 
 
