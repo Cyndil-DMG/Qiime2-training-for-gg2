@@ -51,7 +51,8 @@ Esto nos generara un archov el cual podemos descargar y ver utilizando la págin
 
 ## DADA2 - denoising 
 
-> [!WARNING] No es recomendable mezclar el trimming de DADA2 con otras herramientas como trimmomatic o fastp, ya que el trimming que hacen estas secuencias mediante Sliding Window, MinLen o sus algoritmos internos puede interferir con el algoritmo de DADA2, llevando a que este se equivoque y descarte secuencias que de otra manera no serían descartadas
+> [!WARNING]
+>  No es recomendable mezclar el trimming de DADA2 con otras herramientas como trimmomatic o fastp, ya que el trimming que hacen estas secuencias mediante Sliding Window, MinLen o sus algoritmos internos puede interferir con el algoritmo de DADA2, llevando a que este se equivoque y descarte secuencias que de otra manera no serían descartadas
  
 El DADA2 es un algoritmo de denoising que nos permitirá varias funciones. 
 
@@ -61,7 +62,8 @@ Al evaluar del demux.qzv podemos apreciar donde la caldiad empieza a bajar singi
 
 Este punto de corte es crucial balancear entre calidad y longitud de la sencuencia, especialmente cunado se trabaje con paired-end reads, ya que es necesario dejar un espacio para el merge de las secuencias
 
-> [!Note] Un punto útil para mantener el merge es la siguiente formula: (trunc_len_f + trunc_len_r) - amplicon_length. Este numero debe de ser idealmente mínimo 20 
+> [!Note]
+>  Un punto útil para mantener el merge es la siguiente formula: (trunc_len_f + trunc_len_r) - amplicon_length. Este numero debe de ser idealmente mínimo 20 
 
 2. **Algoritmo de DADA2**
 
@@ -133,7 +135,8 @@ Las representative sequences de nuestro output son básicamente todas aquellas s
 
 ## Greengenes2 - Non-v4-16s Data 
 
-> [!WARNING] Esta parte es opcional para aquellas personas que no trabajen con mezclas de amplicones o amplicones de bacterias unicamente v4. Greengenes 2 esta especializado a bacterias por lo cual aplicar estos comandos a metabarcoding de hongos, parasitos o helmintos no brindara resultados fiables. Utilizar estos comandos para este tipo de datos puede brindar resultados poco confiables. 
+> [!WARNING]
+>  Esta parte es opcional para aquellas personas que no trabajen con mezclas de amplicones o amplicones de bacterias unicamente v4. Greengenes 2 esta especializado a bacterias por lo cual aplicar estos comandos a metabarcoding de hongos, parasitos o helmintos no brindara resultados fiables. Utilizar estos comandos para este tipo de datos puede brindar resultados poco confiables. 
 
 A continuación vamos a ver un herramienta que nos ayude a mezclar tipos de muestra y analizar de una manera más robusta datos provenientes de diferentes lados. 
 
@@ -183,7 +186,8 @@ Sin embargo, atnes tenemos que comparar nuestras secunecias que se encuentran en
 
 El comando necesario para filtrar por el arbol es el siguiente: 
 
-> [!Note] Tenemos que generar un objeto de taxonomía a partir de la tabla de nuestros datos para futuros calculos. Importante hacer esto al principio porque este objeto ayuda a eliminar dominios no deseados como Eukaryota, archaea, mitocondrias, cloroplastos. 
+> [!Note]
+>  Tenemos que generar un objeto de taxonomía a partir de la tabla de nuestros datos para futuros calculos. Importante hacer esto al principio porque este objeto ayuda a eliminar dominios no deseados como Eukaryota, archaea, mitocondrias, cloroplastos. 
 
 Generamos el objeto de taxonomía. Es necesario usar el arbol taxonomico proporcionado por greengenes2 disponible [aquí](https://ftp.microbio.me/greengenes_release/current/2024.09.taxonomy.asv.nwk.qza)
 
