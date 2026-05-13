@@ -137,6 +137,8 @@ Las representative sequences de nuestro output son básicamente todas aquellas s
 
 ## Greengenes2 - Non-v4-16s Data 
 
+![GG2 image](./images/gg2.png)
+
 > [!WARNING]
 >  Esta parte es opcional para aquellas personas que no trabajen con mezclas de amplicones o amplicones de bacterias unicamente v4. Greengenes 2 esta especializado a bacterias por lo cual aplicar estos comandos a metabarcoding de hongos, parasitos o helmintos no brindara resultados fiables. Utilizar estos comandos para este tipo de datos puede brindar resultados poco confiables. 
 
